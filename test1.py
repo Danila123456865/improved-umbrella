@@ -4,15 +4,7 @@ while True:
     if t==1:
         print('еденицы всегда число армстронга')
     if t ==2:
-        number_1 = numbers // 100
-        number_2 = numbers % 100 // 10
-        degree=number_1**2
-        degree1=number_2**2
-        amount=degree+degree1
-        if amount==numbers:
-            print('это число армстронга')
-        else:
-            print('это не число армстронга')
+        print('десятки немогут быть числом армстронга')
     if t==3:
         number_1 = numbers // 100
         number_2 = numbers % 100 // 10
