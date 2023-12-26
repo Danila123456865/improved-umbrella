@@ -1,11 +1,13 @@
-a=int(input('Введите число'))
-w=list(str(a))
-e=len(w)
-i=0 
-for r in range(e):
-    q=w[0]**e
-    l=l+q
-    i=i+1
-c=list(l)
-if c==w:
-    print('это число армсторнга')
+while True:
+    numbers=int(input('Введите число'))
+    numbers_1 = numbers // 100
+    numbers_2 = numbers % 100 // 10
+    numbers_3 = numbers % 10
+    degree_1=numbers_1**3
+    degree_2=numbers_2**3
+    degree_3=numbers_3**3
+    amount=degree_1+degree_2+degree_3
+    if amount==numbers:
+        print('это число армстронга')
+    else:
+        print('это не число армстронга')
